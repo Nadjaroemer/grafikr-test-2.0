@@ -1,7 +1,9 @@
 import MainMenu from "../components/MainMenu";
+import Button from "../components/Button";
 import BureauHero from "../components/BureauHero";
 import shopifyexperts from "../assets/shopifyeksperter.png";
-import Button from "../components/Button";
+import Description from "../components/Description";
+
 import Footer from "../components/Footer";
 
 export default function Landingpage() {
@@ -9,12 +11,16 @@ export default function Landingpage() {
     <div className="pl-20 pr-20">
       <header>
         <MainMenu />
+        <Button />
         <BureauHero
           text="SHOPIFY EXPERTS"
           headline="Et dediceret e-commerece-bureau"
           image={shopifyexperts}
         />
-        <Button />
+        <Description
+          headline="Kompetencer"
+          text="Ved at kombinere analyse, strategi, kreativitet, design og udvikling, skaber vi positiv gennemslagskraft for ambitiøse brands, som ønsker at opnå målbar afkast."
+        />
       </header>
       <main></main>
       <footer>
