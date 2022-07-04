@@ -24,7 +24,7 @@ module.exports = {
           backgroundColor: "rgba(0, 0, 0, 1)",
           color: "#fff",
           position: "absolute",
-          right: "64px",
+          right: "80px",
           top: "33px",
           width: "136px",
           height: "33px",
