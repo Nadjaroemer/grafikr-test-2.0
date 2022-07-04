@@ -5,9 +5,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
-      fontSize: [
+      fontFamily: [
         {
-          button: "16px",
+          PlusJakartarSans: ["Plus Jakarta Sans", "sans - serif"],
         },
       ],
     },

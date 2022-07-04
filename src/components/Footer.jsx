@@ -2,58 +2,80 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="flex">
-        <section>
-          <ul className="flex">
-            <Link to="/">Support</Link>
-            <Link to="/">Grafikr A/S</Link>
-            <Link to="/">CVR:37783277</Link>
-            <Link to="/">Telefon &plus;45 69 69 29 15</Link>
-            <Link to="/">kontakt&commat;grafikr.dk</Link>
-            <Link to="/">
-              <div className="flex">
-                <p>Randers:</p>
-                <p>Vestergade 10b</p>
-                <p>8900Randers C</p>
-              </div>
-            </Link>
-            <Link to="/">
-              København:
-              <br />
-              Scandigade 25
-              <br />
-              2450 Køvenhavn SV
-            </Link>
-          </ul>
-        </section>
-
-        <section>
+    <footer className="bg-black text-white pl-20 pr-30 pt-10 pb-10 font-PlusJakartarSans text-sm">
+      <div className="flex pb-8">
+        <section className="pr-20">
           <ul>
-            <Link to="/">Information</Link>
-            <Link to="/">Karriere &lpar;4 åbne stillinger&rpar;</Link>
-            <Link to="/">Hent e-bog om Shopify&plus;</Link>
-            <Link to="/">Cases</Link>
-            <Link to="/">Blog</Link>
-            <Link to="/">Om os</Link>
-            <Link to="/">Kontakt os</Link>
+            <li className="pb-6 text-2xl">Support</li>
+            <li>Grafikr A/S</li>
+            <li className="pb-6">CVR:37783277</li>
+            <li>+45 69 69 29 15</li>
+            <li className="pb-6">kontakt@grafikr.dk</li>
+            <li>Randers:</li>
+            <li>Vestergade 10b</li>
+            <li className="pb-6">8900Randers C</li>
+            <li>København:</li>
+            <li>Scandigade 25</li>
+            <li>2450 Køvenhavn SV</li>
           </ul>
         </section>
 
-        <section className="flex">
-          <ul className="flex">
-            <Link to="/">Udvalgte Cases</Link>
-            <Link to="">Arkk Copenhagen</Link>
-            <Link to="/">Basic Apparel</Link>
-            <Link to="/">Barons</Link>
-            <Link to="/">LinkCamille Brinch Jewellery</Link>
-            <Link to="/">Eyda</Link>
-            <Link to="/">LinkNoella Fashion</Link>
-            <Link to="/">SACKit</Link>
+        <section className="pr-20">
+          <ul className="leading-6">
+            <li className="pb-6 text-2xl">Information</li>
+            <li>Karriere (4 åbne stillinger)</li>
+            <li>
+              <Link to="/">Hent e-bog om Shopify+</Link>
+            </li>
+            <li>
+              <Link to="/">Cases</Link>
+            </li>
+            <li>
+              <Link to="/">Blog</Link>
+            </li>
+            <li>
+              <Link to="/">Om os</Link>
+            </li>
+            <li>
+              <Link to="/">Kontakt os</Link>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <ul className="leading-6">
+            <li className="pb-6 text-2xl">Udvalgte Cases</li>
+            <li>
+              <Link to="">Arkk Copenhagen</Link>
+            </li>
+            <li>
+              <Link to="/">Basic Apparel</Link>
+            </li>
+            <li>
+              <Link to="/">Barons</Link>
+            </li>
+            <li>
+              <Link to="/">LinkCamille Brinch Jewellery</Link>
+            </li>
+            <li>
+              <Link to="/">Eyda</Link>
+            </li>
+            <li>
+              <Link to="/">LinkNoella Fashion</Link>
+            </li>
+            <li>
+              <Link to="/">SACKit</Link>
+            </li>
           </ul>
         </section>
       </div>
       <p>&copy;Grafikr A/S. Alle rettigheder forbeholdt 2021</p>
+      {/*<div className=" abspolute w-8 h-12 -rotate-45 ">
+        <span>strepxe</span>
+        <span>yfipohs</span>
+        <span>- uaerub</span>
+        <span>ecremmoc-e</span>
+  </div>*/}
     </footer>
   );
 }
