@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Form from "./Form";
 
 export default function Footer() {
   return (
@@ -68,7 +69,9 @@ export default function Footer() {
             </li>
           </ul>
         </section>
+        <Form />
       </div>
+
       <p>&copy;Grafikr A/S. Alle rettigheder forbeholdt 2021</p>
       {/*<div className=" abspolute w-8 h-12 -rotate-45 ">
         <span>strepxe</span>
