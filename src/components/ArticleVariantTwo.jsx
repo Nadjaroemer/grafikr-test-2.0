@@ -1,4 +1,4 @@
-import Button from "../components/Button";
+import Button from "./Button";
 
 export default function ArticleVariantTwo({ headline, text, imagePath }) {
   return (

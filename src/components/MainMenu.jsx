@@ -3,7 +3,7 @@ import grafikrLogo from "../assets/grafikr_logo.png";
 
 export default function MainMenu() {
   return (
-    <nav className="pt-10">
+    <nav className="mx-auto pl-20">
       <ul className="flex justify-center align-middle">
         <Link to="/" className="pl-8 pr-8">
           Forside

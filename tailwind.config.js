@@ -10,6 +10,10 @@ module.exports = {
           PlusJakartarSans: ["Plus Jakarta Sans", "sans - serif"],
         },
       ],
+      backgroundImage: {
+        kiranan: "url('../assets/Kiranan.png')",
+        erik: "url('./images/Erik.png')",
+      },
     },
   },
   plugins: [
@@ -23,21 +27,16 @@ module.exports = {
         ".btn-black": {
           backgroundColor: "rgba(0, 0, 0, 1)",
           color: "#fff",
-          position: "absolute",
-          right: "80px",
-          top: "33px",
           width: "136px",
           height: "33px",
           "&:hover": {
             backgroundColor: "#fffff",
           },
         },
-        ".btn-red": {
-          backgroundColor: "#e3342f",
-          color: "#fff",
-          "&:hover": {
-            backgroundColor: "#cc1f1a",
-          },
+        ".btn-nav": {
+          position: "absolute",
+          right: "80px",
+          top: "33px",
         },
       });
     }),

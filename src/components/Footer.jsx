@@ -72,7 +72,7 @@ export default function Footer() {
         <Form />
       </div>
 
-      <p className="pl-32">
+      <p className="pl-8">
         &copy;Grafikr A/S. Alle rettigheder forbeholdt 2021
       </p>
       {/*<div className=" abspolute w-8 h-12 -rotate-45 ">

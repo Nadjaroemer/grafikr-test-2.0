@@ -7,17 +7,21 @@ import ArticleVariantTwo from "../components/ArticleVariantTwo";
 import Carousel from "../components/carousel";
 import Footer from "../components/Footer";
 import workculturePath from "../assets/arbejdskultur.png";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import shopifyExpertsPath from "../assets/shopifyeksperter.png";
 import articleImagePath from "../assets/webudvikling.png";
 import articleTwoImagePath from "../assets/webudviklingshopify.png";
+import kirananImage from "../assets/Kiranan.png";
 
 export default function Landingpage() {
   return (
     <div className="pl-20 pr-20">
       <header>
-        <MainMenu />
-        <Button text="Hent e-bog" />
+        <div className="flex justify-center align-middle pt-5">
+          <MainMenu />
+          <Button text="Hent e-bog" />
+        </div>
       </header>
       <main>
         <BureauHero
@@ -53,13 +57,23 @@ export default function Landingpage() {
             Mød dine (Måske) nye kollegaer
           </h1>
           <p className="text-center text-4xl font-light tracking-widest pb-6">
-            Kiranan, Erik, Anders, Lasse, Pernille, Magnus,
+            <span
+              className="bg-{{kirananImage}}"
+              style={{ backgroundImage: kirananImage }}
+            >
+              Kiranan,
+            </span>
+            <img
+              className="hover:visible"
+              src={kirananImage}
+              alt="Picture of Kiranan"
+            />
+            Erik, Anders, Lasse, Pernille, Magnus,
           </p>
           <p className="text-center text-4xl font-extralight tracking-widest">
             Rasmus, Christian, Tobias, Tor, Thomas
           </p>
         </div>
-
         {/*Brand Carousel*/}
         <Carousel />
       </main>
