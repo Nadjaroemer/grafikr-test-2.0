@@ -1,20 +1,23 @@
 import MainMenu from "../components/MainMenu";
 import Button from "../components/Button";
 import BureauHero from "../components/BureauHero";
-import shopifyexperts from "../assets/shopifyeksperter.png";
 import Description from "../components/Description";
+import ArticleVariantOne from "../components/ArticleVariantOne";
+import ArticleVariantTwo from "../components/ArticleVariantTwo";
 import Carousel from "../components/carousel";
 import Footer from "../components/Footer";
-import workculture from "../assets/arbejdskultur.png";
+import workculturePath from "../assets/arbejdskultur.png";
 
 import shopifyExpertsPath from "../assets/shopifyeksperter.png";
+import articleImagePath from "../assets/webudvikling.png";
+import articleTwoImagePath from "../assets/webudviklingshopify.png";
 
 export default function Landingpage() {
   return (
     <div className="pl-20 pr-20">
       <header>
         <MainMenu />
-        <Button />
+        <Button text="Hent e-bog" />
       </header>
       <main>
         <BureauHero
@@ -26,12 +29,22 @@ export default function Landingpage() {
           headline="Kompetencer"
           text="Ved at kombinere analyse, strategi, kreativitet, design og udvikling, skaber vi positiv gennemslagskraft for ambitiøse brands, som ønsker at opnå målbar afkast."
         />
+        <ArticleVariantOne
+          headline="Webdesign"
+          text="Vi skaber mindeværdige brugeroplevelser og øget salg med unikt webdesign"
+          imagePath={articleImagePath}
+        />
+        <ArticleVariantTwo
+          imagePath={articleTwoImagePath}
+          headline="Webudvikling i Shopify"
+          text="Vi er certificerede Shopify eksperter og udvikler mindeværdige e-commerce løsninger"
+        />
 
         <section className="flex justify-center flex-col">
           <h1 className="font-semibold text-4xl pt-10 pb-10 text-center">
             Arbejsdkulturen hos Grafikr
           </h1>
-          <img src={workculture} alt="Arbejdskulturen" className="pb-20" />
+          <img src={workculturePath} alt="Arbejdskulturen" className="pb-20" />
         </section>
 
         {/*Mød dine nye kollegaer*/}
