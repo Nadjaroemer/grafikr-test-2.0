@@ -40,7 +40,7 @@ export default function Landingpage() {
           text="Vi er certificerede Shopify eksperter og udvikler mindeværdige e-commerce løsninger"
         />
 
-        <section className="flex justify-center flex-col">
+        <section className="flex justify-center flex-col pt-36">
           <h1 className="font-semibold text-4xl pt-10 pb-10 text-center">
             Arbejsdkulturen hos Grafikr
           </h1>
@@ -52,7 +52,7 @@ export default function Landingpage() {
           <h1 className="font-semibold text-4xl pb-10">
             Mød dine (Måske) nye kollegaer
           </h1>
-          <p className="text-center text-4xl font-extralight tracking-widest pb-6">
+          <p className="text-center text-4xl font-light tracking-widest pb-6">
             Kiranan, Erik, Anders, Lasse, Pernille, Magnus,
           </p>
           <p className="text-center text-4xl font-extralight tracking-widest">
