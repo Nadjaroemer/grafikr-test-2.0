@@ -3,9 +3,9 @@ import Form from "./Form";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pl-20 pr-30 pt-10 pb-10 font-PlusJakartarSans text-sm">
-      <div className="flex pb-8">
-        <section className="pr-20">
+    <footer className="bg-black text-white pt-20 pb-20 font-PlusJakartarSans text-sm">
+      <div className="flex justify-around pb-8 pl-2">
+        <section className="">
           <ul>
             <li className="pb-6 text-2xl">Support</li>
             <li>Grafikr A/S</li>
@@ -72,7 +72,9 @@ export default function Footer() {
         <Form />
       </div>
 
-      <p>&copy;Grafikr A/S. Alle rettigheder forbeholdt 2021</p>
+      <p className="pl-32">
+        &copy;Grafikr A/S. Alle rettigheder forbeholdt 2021
+      </p>
       {/*<div className=" abspolute w-8 h-12 -rotate-45 ">
         <span>strepxe</span>
         <span>yfipohs</span>

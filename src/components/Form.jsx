@@ -5,13 +5,12 @@ import * as yup from "yup";
 
 const schema = yup
   .object({
-    navn: yup.string().required(),
-
+    navn: yup.string().required("Venligst indtast et navn"),
     email: yup
       .string()
       .email()
-      .matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "invalid email")
-      .required(),
+      .matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "Ikke en email adresse")
+      .required("Venligst indtast en email adresse"),
   })
   .required();
 
@@ -31,7 +30,7 @@ export default function Form() {
 
   return (
     <>
-      <div className="App mt-10 w-1/3 mx-auto">
+      <div>
         <form
           onSubmit={handleSubmit(validation)}
           className="flex justify-center flex-col items-center"
@@ -41,32 +40,25 @@ export default function Form() {
             {...register("Navn")}
             type="text"
             placeholder="Navn"
-            className="mt-2
-                        block
-                        w-full
-
-                        bg-gray-100
-                        border-transparent
-                        focus:border-gray-500 focus:bg-white focus:ring-0
-    "
+            className="mt-2 block w-80 h-12 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
           />
-          {errors.navn && <p>{errors.navn.message}</p>}
+          {errors.email && <p>{errors.email.message}</p>}
           <input
             {...register("email")}
             type="text"
             placeholder="Email"
             className="mt-2
                         block
-                        w-full
+                        w-80
+                        h-12
                         bg-gray-100
                         border-transparent
-                        focus:border-gray-500 focus:bg-white focus:ring-0
-    "
+                        focus:border-gray-500 focus:bg-white focus:ring-0"
           />
           <input
             type="submit"
-            value="Tilmed vores nyhedsbrev -->"
-            className="bg-white  w-full rounded-md mt-10 cursor-pointer pt-1 pb-1 pl-10 pr-10 text-black"
+            value="Tilmed dig vores nyhedsbrev"
+            className="bg-black w-80 h-12 mt-10 cursor-pointer text-white border border-white"
           />
         </form>
       </div>

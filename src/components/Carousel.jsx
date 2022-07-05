@@ -2,7 +2,6 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Thumbs } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";

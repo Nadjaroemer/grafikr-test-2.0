@@ -29,10 +29,17 @@ export default function Landingpage() {
           headline="Arbejsdkulturen hos Grafikr"
           image={shopifyexperts}
         />
-        <Description
-          headline="Mød dine (Måske) nye kollegaer"
-          text="Kiranan, Erik, Anders, Lasse, Pernille, Magnus, Rasmus, Christion, Tobias, Tor, Thomas"
-        />
+        <div className="text-center ">
+          <h1 className="font-semibold text-4xl pb-10">
+            Mød dine (Måske) nye kollegaer
+          </h1>
+          <p className="text-center text-4xl font-extralight tracking-widest pb-6">
+            Kiranan, Erik, Anders, Lasse, Pernille, Magnus,
+          </p>
+          <p className="text-center text-4xl font-extralight tracking-widest">
+            Rasmus, Christian, Tobias, Tor, Thomas
+          </p>
+        </div>
         <Carousel />
       </main>
       <footer>
