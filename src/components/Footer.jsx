@@ -3,11 +3,11 @@ import Form from "./Form";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pt-20 pb-20 font-PlusJakartarSans text-sm">
-      <div className="flex justify-around pb-8 pl-2">
-        <section className="">
+    <footer className="bg-black text-white md:pt-20 md:pb-20 font-PlusJakartarSans text-sm">
+      <div className="flex flex-col content-center font-extralight md:font-normal md:flex-row md:justify-around pb-8 pl-2">
+        <section className="text-center md:text-left">
           <ul>
-            <li className="pb-6 text-2xl">Support</li>
+            <li className="pb-2 pt-8 md:pb-6 text-xl md:text-2xl">Support</li>
             <li>Grafikr A/S</li>
             <li className="pb-6">CVR:37783277</li>
             <li>+45 69 69 29 15</li>
@@ -21,9 +21,11 @@ export default function Footer() {
           </ul>
         </section>
 
-        <section className="pr-20">
+        <section className="text-center md:pr-20 md:text-left">
           <ul className="leading-6">
-            <li className="pb-6 text-2xl">Information</li>
+            <li className="pb-2 pt-8 text-xl md:pb-6 md:text-2xl">
+              Information
+            </li>
             <li>Karriere (4 åbne stillinger)</li>
             <li>
               <Link to="/">Hent e-bog om Shopify+</Link>
@@ -43,9 +45,11 @@ export default function Footer() {
           </ul>
         </section>
 
-        <section>
+        <section className="text-center pb-8 md:text-left">
           <ul className="leading-6">
-            <li className="pb-6 text-2xl">Udvalgte Cases</li>
+            <li className="pb-2 pt-8 text-xl md:pb-6 md:text-2xl">
+              Udvalgte Cases
+            </li>
             <li>
               <Link to="">Arkk Copenhagen</Link>
             </li>
@@ -72,8 +76,8 @@ export default function Footer() {
         <Form />
       </div>
 
-      <p className="pl-8">
-        &copy;Grafikr A/S. Alle rettigheder forbeholdt 2021
+      <p className="md:pl-24 pb-5 text-center text-xs md:text-s md:text-left">
+        &copy; Grafikr A/S. Alle rettigheder forbeholdt 2021
       </p>
       {/*<div className=" abspolute w-8 h-12 -rotate-45 ">
         <span>strepxe</span>
