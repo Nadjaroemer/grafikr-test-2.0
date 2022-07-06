@@ -53,7 +53,7 @@ export default function Landingpage() {
           </section>
 
           {/*Mød dine nye kollegaer*/}
-          <div className="text-center pt-8 pb-10 ">
+          <div className="text-center pt-8 pb-10 md:pb-20">
             <h1 className="font-semibold text-2xl text-semibold md:text-4xl pb-4">
               Mød dine (Måske) nye kollegaer
             </h1>
