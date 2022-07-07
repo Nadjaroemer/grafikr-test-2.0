@@ -186,7 +186,7 @@ export default function Landingpage() {
               Mød dine (Måske) nye kollegaer
             </h1>
             <p className="text-center text-xl md:text-4xl font-light tracking-widest">
-              Kiranan, Erik, Anders, Lasse, Pernille, Magnus,
+              Nadja, Kiranan, Erik, Anders, Lasse, Pernille, Magnus,
             </p>
             <p className="text-center text-xl md:text-4xl font-light tracking-widest">
               Rasmus, Christian, Tobias, Tor, Thomas
