@@ -58,7 +58,7 @@ export default function Form() {
           <input
             type="submit"
             value="Tilmed dig vores nyhedsbrev"
-            className="bg-black w-80 h-12 mt-10 cursor-pointer text-white border border-white"
+            className="bg-black text-left pl-4 w-80 h-12 mt-10 cursor-pointer text-white border border-white"
           />
         </form>
       </div>
