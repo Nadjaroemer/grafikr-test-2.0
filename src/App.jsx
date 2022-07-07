@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import TokenContext from "../TokenContext";
-import Landingpage from "./views/landingpage";
+import Landingpage from "./views/Landingpage";
 
 function App() {
   const tokenState = useState({});

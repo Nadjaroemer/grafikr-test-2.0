@@ -38,6 +38,9 @@ module.exports = {
           right: "80px",
           top: "33px",
         },
+        ".btn-burger": {
+          position: "fixed",
+        },
       });
     }),
     require("@tailwindcss/forms"),

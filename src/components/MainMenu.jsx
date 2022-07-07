@@ -4,23 +4,7 @@ import grafikrLogo from "../assets/grafikr_logo.png";
 export default function MainMenu() {
   return (
     <>
-      <button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-      <nav className="mx-auto pl-20">
+      <nav className="mx-auto pl-20 md:pt-2">
         <ul className="flex justify-center align-middle">
           <Link to="/" className="pl-8 pr-8">
             Forside
