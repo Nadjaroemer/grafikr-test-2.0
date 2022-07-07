@@ -8,15 +8,42 @@ import Description from "../components/Description";
 import ArticleVariantOne from "../components/ArticleVariantOne";
 import ArticleVariantTwo from "../components/ArticleVariantTwo";
 import Footer from "../components/Footer";
+import Carousel from "../components/Carousel";
 import workculturePath from "../assets/arbejdskultur.png";
 
 import shopifyExpertsPath from "../assets/shopifyeksperter.png";
 import articleImagePath from "../assets/webudvikling.png";
 import articleTwoImagePath from "../assets/webudviklingshopify.png";
+import barrons from "../assets/barrons.png";
+import basicApparel from "../assets/basicApparel.png";
+import suits from "../assets/suits.jpg";
+import sneakers from "../assets/sneakers.jpg";
 
 export default function Landingpage() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 640px)" });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [imageData, setImageData] = useState([
+    {
+      src: barrons,
+      alt: "Barrons",
+      text: "Barrons",
+    },
+    {
+      src: basicApparel,
+      alt: "Basic Apparel",
+      text: "Basic Apparel",
+    },
+    {
+      src: sneakers,
+      alt: "Sneakers hanging on wires",
+      text: "Sneaker Store",
+    },
+    {
+      src: suits,
+      alt: "Suits on a rack",
+      text: "Suits on a rack",
+    },
+  ]);
 
   useEffect(() => {
     if (!isTabletOrMobile) {
@@ -132,28 +159,39 @@ export default function Landingpage() {
             <img src={workculturePath} alt="Arbejdskulturen" />
           </section>
 
+          {/*Medium Screen and Mobile Version of Brands-Pictures/Carousel and Picture-Carousel*/}
+          {isTabletOrMobile ? (
+            <div>
+              <h2 className="text-xl text-center md:text-4xl font-bold pb-2 md:pb-8">
+                Arbejd med nogle af de største brands
+              </h2>
+              {imageData.map(({ src, alt, text }) => {
+                return (
+                  <div key={src} className="relative flex flex-col">
+                    <img src={src} alt={alt} className="w-screen p-5" />
+                    <p className="absolute text-white bottom-5 left-6">
+                      {text}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <Carousel imageData={imageData} setImageData={setImageData} />
+          )}
+
           {/*Mød dine nye kollegaer*/}
           <div className="text-center pt-8 pb-10 md:pb-20">
             <h1 className="font-semibold text-2xl text-semibold md:text-4xl pb-4">
               Mød dine (Måske) nye kollegaer
             </h1>
             <p className="text-center text-xl md:text-4xl font-light tracking-widest">
-              Kiranan,
-              {/*<span>
-                Kiranan,
-                <img
-                  className="invisible"
-                  src={kirananImage}
-                  alt="Picture of Kiranan"
-                />
-  </span>*/}
-              Erik, Anders, Lasse, Pernille, Magnus,
+              Kiranan, Erik, Anders, Lasse, Pernille, Magnus,
             </p>
             <p className="text-center text-xl md:text-4xl font-light tracking-widest">
               Rasmus, Christian, Tobias, Tor, Thomas
             </p>
           </div>
-          {/*Brand Carousel <Carousel />*/}
         </main>
       </div>
       <footer>

@@ -10,10 +10,6 @@ module.exports = {
           PlusJakartarSans: ["Plus Jakarta Sans", "sans - serif"],
         },
       ],
-      backgroundImage: {
-        kiranan: "url('../assets/Kiranan.png')",
-        erik: "url('./images/Erik.png')",
-      },
     },
   },
   plugins: [
@@ -38,8 +34,14 @@ module.exports = {
           right: "80px",
           top: "33px",
         },
-        ".btn-burger": {
-          position: "fixed",
+        ".burger-menu": {
+          position: "absolute",
+        },
+        ".carousel-caption": {
+          position: "absolute",
+          bottom: "0",
+          left: "8px",
+          color: "white",
         },
       });
     }),
