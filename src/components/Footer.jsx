@@ -79,12 +79,6 @@ export default function Footer() {
       <p className="md:pl-24 pb-5 text-center text-xs md:text-s md:text-left">
         &copy; Grafikr A/S. Alle rettigheder forbeholdt 2021
       </p>
-      {/*<div className=" abspolute w-8 h-12 -rotate-45 ">
-        <span>strepxe</span>
-        <span>yfipohs</span>
-        <span>- uaerub</span>
-        <span>ecremmoc-e</span>
-  </div>*/}
     </footer>
   );
 }

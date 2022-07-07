@@ -20,28 +20,54 @@ export default function Carousel({ imageData, setImageData }) {
       </h2>
       <div className="flex gap-x-8 relative pb-6">
         <button
-          className="absolute z-10 top-2/3 left-6"
+          className="absolute z-10 inset-y-0 left-0 "
           onClick={() => {
             left();
           }}
         >
-          left
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-10 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="white"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
         </button>
         {imageData.slice(0, 3).map(({ src, alt, text }) => {
           return (
             <div key={src} className="relative">
               <img src={src} alt={alt} />
-              <p className="absolute text-white bottom-0 left-6">{text}</p>
+              <p className="absolute text-white bottom-5 left-6">{text}</p>
             </div>
           );
         })}
         <button
-          className="absolute z-10 top-2/3 right-6"
+          className="absolute z-10 inset-y-0 right-0"
           onClick={() => {
             right();
           }}
         >
-          right
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-10 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="white"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
         </button>
       </div>
     </div>

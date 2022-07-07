@@ -6,27 +6,41 @@ export default function MainMenu() {
     <>
       <nav className="mx-auto pl-20 md:pt-2">
         <ul className="flex justify-center align-middle">
-          <Link to="/" className="pl-8 pr-8">
-            Forside
-          </Link>
-          <Link to="/" className="pr-8">
-            Kompetencer
-          </Link>
-          <Link to="/" className="pr-8">
-            Service
-          </Link>
-          <Link to="/" className="pr-8">
-            <img src={grafikrLogo} alt="grafikrLogo" />
-          </Link>
-          <Link to="/" className="pr-8">
-            Blog
-          </Link>
-          <Link to="/" className="pr-8">
-            Om os
-          </Link>
-          <Link to="/" className="pr-8">
-            Kontakt
-          </Link>
+          <li>
+            <Link to="/" className="pl-8 pr-8">
+              Forside
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="pr-8">
+              Kompetencer
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="pr-8">
+              Service
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="pr-8">
+              <img src={grafikrLogo} alt="grafikrLogo" className="shrink-0" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="pr-8">
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="pr-8">
+              Om os
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="pr-8">
+              Kontakt
+            </Link>
+          </li>
         </ul>
       </nav>
     </>

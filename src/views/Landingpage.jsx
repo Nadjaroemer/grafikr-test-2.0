@@ -18,6 +18,7 @@ import barrons from "../assets/barrons.png";
 import basicApparel from "../assets/basicApparel.png";
 import suits from "../assets/suits.jpg";
 import sneakers from "../assets/sneakers.jpg";
+import MobileMenu from "../components/MobileMenu";
 
 export default function Landingpage() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 640px)" });
@@ -54,40 +55,15 @@ export default function Landingpage() {
   return (
     <>
       {isMobileMenuOpen ? (
-        <div
-          style={{
-            height: "100vh",
-            width: "30vw",
-            backgroundColor: "white",
-            position: "absolute",
-          }}
-        >
-          <button
-            onClick={() => {
-              setIsMobileMenuOpen(false);
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+        <div className="fixed w-screen h-screen bg-white z-50">
+          <MobileMenu setIsMobileMenuOpen={setIsMobileMenuOpen} />
         </div>
       ) : undefined}
-      <div className="pl-5 pr-5 lg:pl-20 lg:pr-20 w-screen mx-auto overscroll-none">
+      <div className="pl-5 pr-5 lg:pl-20 lg:pr-20 w-screen mx-auto">
         <header>
           {isTabletOrMobile ? (
             <button
+              className="pt-4"
               onClick={() => {
                 setIsMobileMenuOpen(!isMobileMenuOpen);
               }}
@@ -152,7 +128,7 @@ export default function Landingpage() {
             text="Vi er certificerede Shopify eksperter og udvikler mindeværdige e-commerce løsninger"
           />
 
-          <section className="flex font-semibold justify-center flex-col pt-8 ">
+          <section className="flex font-semibold justify-center flex-col pt-8 pb-8 ">
             <h1 className="text-2xl md:text-4xl md:pt-10 md:pb-10 text-center">
               Arbejsdkulturen hos Grafikr
             </h1>
@@ -169,7 +145,7 @@ export default function Landingpage() {
                 return (
                   <div key={src} className="relative flex flex-col">
                     <img src={src} alt={alt} className="w-screen p-5" />
-                    <p className="absolute text-white bottom-5 left-6">
+                    <p className="absolute text-white bottom-8 left-8 text-2xl">
                       {text}
                     </p>
                   </div>
@@ -181,8 +157,8 @@ export default function Landingpage() {
           )}
 
           {/*Mød dine nye kollegaer*/}
-          <div className="text-center pt-8 pb-10 md:pb-20">
-            <h1 className="font-semibold text-2xl text-semibold md:text-4xl pb-4">
+          <div className="text-center pt-10 pb-10 md:pb-20">
+            <h1 className="font-semibold text-2xl text-semibold md:text-4xl pb-4 pt-7">
               Mød dine (Måske) nye kollegaer
             </h1>
             <p className="text-center text-xl md:text-4xl font-light tracking-widest">
