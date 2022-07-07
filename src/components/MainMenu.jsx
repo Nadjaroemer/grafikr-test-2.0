@@ -27,7 +27,7 @@ export default function MainMenu() {
             </Link>
           </li>
           <li>
-            <Link to="/" className="pr-8">
+            <Link to="/" className="pr-8 pl-8">
               Blog
             </Link>
           </li>

@@ -76,7 +76,7 @@ export default function Footer() {
         <Form />
       </div>
 
-      <p className="md:pl-24 pb-5 text-center text-xs md:text-s md:text-left">
+      <p className="md:pl-14 pb-5 text-center text-xs md:text-s md:text-left">
         &copy; Grafikr A/S. Alle rettigheder forbeholdt 2021
       </p>
     </footer>
